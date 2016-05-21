@@ -63,43 +63,42 @@
  * 1.)	Open the command prompt. It's called cmd.exe on Windows 
  * 		
  * 2.)  Navigate to the folder location of this HelloWorld.java file on your 
- * 		computer. For example, if the file is on the Desktop, you can type the 
- * 		following command and press Enter:
+ * 	computer. For example, if the file is on the Desktop, you can type the 
+ * 	following command and press Enter:
  * 
- * 		cd C:\Users\(username)\Desktop
+ * 	cd C:\Users\(username)\Desktop
  * 
- * 		...Where you have to replace (username) with your Windows username. The 
- * 		C:\Users\(username)\Desktop is the folder location and 'cd' is a command
- * 		for 'change directory.'
+ * 	...Where you have to replace (username) with your Windows username. The 
+ * 	C:\Users\(username)\Desktop is the folder location and 'cd' is a command
+ * 	for 'change directory.'
  * 
- * 3.) 	If you want to be sure the file is in this folder location, you can 
- * 		type:
+ * 3.) 	If you want to be sure the file is in this folder location, you can type:
  * 
- * 		dir
+ * 	dir
  * 
- * 		...And press Enter. This will list the files in the directory. You 
- * 		should see HelloWorld.java in the directory. 
+ * 	...And press Enter. This will list the files in the directory. You 
+ * 	should see HelloWorld.java in the directory. 
  * 
  * 4.) 	To COMPILE the Java file, type the following and press Enter:
  * 
- * 		javac HelloWorld.java
+ * 	javac HelloWorld.java
  * 
  * 5.) 	'javac' is the Java compiler. This will create a file called: 
  * 
- * 		HelloWorld.class 
+ * 	HelloWorld.class 
  * 
- * 		This is the compiled binary file that the JVM will use to run your 
- * 		program. These are the real machine instructions that your CPU can 
- * 		understand. Type 'dir' again to see that it was created. When you are 
- * 		ready to run the program for real, simply type the following and press 
- * 		Enter:
+ * 	This is the compiled binary file that the JVM will use to run your 
+ * 	program. These are the real machine instructions that your CPU can 
+ * 	understand. Type 'dir' again to see that it was created. When you are 
+ * 	ready to run the program for real, simply type the following and press 
+ * 	Enter:
  * 
- * 		java HelloWorld
+ * 	java HelloWorld
  * 
  * 6.)	The program should run if you have not made mistakes, and you should see
- * 		the following output on the screen:
+ * 	the following output on the screen:
  * 
- * 		Hello, world!
+ * 	Hello, world!
  * 
  * ----------------------------------------------------------------------------
  * USING GITHUB
@@ -114,54 +113,64 @@
  * 
  * 1.)	Install Git-Bash on Windows. Go here: 
  * 		
- * 		https://git-for-windows.GitHub.io/
+ * 	https://git-for-windows.GitHub.io/
  * 
  * 2.) 	Follow the tutorial linked below. Do ONLY Steps 1-3. DO NOT go on to 
- * 		Step 4.  
+ * 	Step 4.  
  * 
- * 		http://code.tutsplus.com/tutorials/git-on-windows-for-newbs--net-25847
+ * 	http://code.tutsplus.com/tutorials/git-on-windows-for-newbs--net-25847
  * 
  * 3.) 	Go to your GitHub profile page and click on 'Repositories'... Desmond 
- * 		has a repository called 'Hello-World'. Look for the HTTPS button at the 
- * 		top and you will see a repository link like so:
+ * 	has a repository called 'Hello-World'. Look for the HTTPS button at the 
+ * 	top and you will see a repository link like so:
  * 
- * 		https://github.com/onedezzie/Hello-World.git
+ * 	https://github.com/onedezzie/Hello-World.git
  * 
- * 		Click the HTTPS button to find the 'Clone with SSH' option. Select the
- * 		SSH link. It should look like this:
+ * 	Click the HTTPS button to find the 'Clone with SSH' option. Select the
+ * 	SSH link. It should look like this:
  * 
- * 		git@github.com:onedezzie/Hello-World.git
+ * 	git@github.com:onedezzie/Hello-World.git
  * 
- * 		This is your GitHub repository link. Copy it. I will refer to this as
- * 		<your_repository> in the next steps...
+ * 	This is your GitHub repository link. Copy it. I will refer to this as
+ * 	<your_repository> in the next steps...
  * 
  * 4.)	Find the folder where you want to keep your java codes and other things.
- * 		Then right-click and open 'Git Bash Here'... This will open another 
- * 		command prompt.  
+ * 	Then right-click and open 'Git Bash Here'... This will open another 
+ * 	command prompt.  
  * 
  * 5.)	Type the following command and press Enter:
  * 
- * 		git clone <your_repository>
+ * 	git clone <your_repository>
  * 
- * 		Example:
+ * 	Example:
  * 
- * 		git clone https://github.com/onedezzie/Hello-World.git
+ * 	git clone https://github.com/onedezzie/Hello-World.git
  * 
- * 		This will initialize the repository on your computer and give you a link
- * 		to your GitHub repository. You should only have to do this ONCE.
+ * 	This will initialize the repository on your computer and give you a link
+ * 	to your GitHub repository. You should only have to do this ONCE.
  * 
  * 6.)	Copy or move your .java files into the repository folder created in the 
- * 		last step. To add the file to the repository, type the following and 
- * 		press Enter: 
+ * 	last step. To add the file to the repository, type the following and 
+ * 	press Enter: 
  * 
- * 		git add *.java
+ * 	git add *.java
  * 
- * 		Now the files are being tracked by git.
+ * 	Now all .java files are being tracked by git. You could alternatively do:
+ * 	
+ *	git add * 
+ * 	
+ * 	This would add all files of all types. The * is a 'wild-card' which means
+ * 	to add all files of any kind. Alternatively, you could do:
+ * 	
+ *	git add .
+ * 	
+ * 	This means to add all files in the current directory. I use this most
+ * 	often for simplicity.
  * 
  * 7.) 	Once you have made some changes to the code, type the following to 
- * 		"commit" them to the repository and press Enter:
+ * 	"commit" them to the repository and press Enter:
  * 
- * 		git commit -m 'First commit!'
+ * 	git commit -m 'First commit!'
  *  
  *  	The -m for "message" portion is important. This is a note to yourself to 
  *  	remind you what you did to change the file. If it's something important,
@@ -172,23 +181,23 @@
  *  	will keep track and backup of ALL changes you make to the added files. 
  *  
  * 8.)	To send the files to the remote repository on the Internet so other 
- * 		people can see what you did or use it themeslves, simply type the 
- * 		following and press Enter:
+ * 	people can see what you did or use it themeslves, simply type the 
+ * 	following and press Enter:
  * 
- * 		git push origin master
+ * 	git push origin master
  * 
- * 		In the future, you don't have to add the 'origin master' portion, but
- * 		for the first time, you will need it. That's it! Your files are 
- * 		committed, and you can check them out on your GitHub repository and
- * 		share it with me!
+ * 	In the future, you don't have to add the 'origin master' portion, but
+ * 	for the first time, you will need it. That's it! Your files are 
+ * 	committed, and you can check them out on your GitHub repository and
+ * 	share it with me!
  * 
  * 9.) 	If someone else makes a change (like me) or you download your repository
- * 		on another computer, you will do the same procedure as above. Steps 1-8
- * 		are for initializing a repository from scratch. Steps 6-8 are for adding
- * 		new files and pushing them to your GitHub repository. If you are 
- * 		changing files you have ALREADY added, just use steps 7-8. If there's a
- * 		possible change added by someone else (or yourself) on another computer,
- * 		simply type the following and press Enter:
+ * 	on another computer, you will do the same procedure as above. Steps 1-8
+ * 	are for initializing a repository from scratch. Steps 6-8 are for adding
+ * 	new files and pushing them to your GitHub repository. If you are 
+ * 	changing files you have ALREADY added, just use steps 7-8. If there's a
+ * 	possible change added by someone else (or yourself) on another computer,
+ * 	simply type the following and press Enter:
  * 
  *   	git pull
  *   
@@ -196,18 +205,18 @@
  *   	repository. When in doubt, ALWAYS do a git pull. 
  * 	
  * 9.) 	Ask questions when you have them. Remember confusion is a good thing, 
- * 		because it means you are L-E-A-R-N-I-N-G!
+ * 	because it means you are L-E-A-R-N-I-N-G!
  * 
  * 10.) Git summary: In practice, you do the following:
  * 
  *  	git pull
- *  	git add *
+ *  	git add .
  *  	git commit -m "Some message"
  *  	git push
  * 
  * 11.) Use this guide if you get lost:
  * 
- * 		http://rogerdudler.github.io/git-guide/
+ * 	http://rogerdudler.github.io/git-guide/
  * 
  * 		
  * ----------------------------------------------------------------------------
@@ -249,11 +258,12 @@ public class HelloWorld { /* The class description starts here */
 	/**
 	 * This thing below called 'public static void main(String[] args)' is an
 	 * example of a 'method.' A method is a way of containing a related set of
-	 * instructions for a computer and giving it a name. Instead of writing how
-	 * to do a specific thing over and over, we can simply make a method that
-	 * says how to complete an operation once, and package the instructions
-	 * together with a name. Classes can contain many methods to describe all
-	 * the operations they are able to perform.
+	 * instructions for a computer and giving it a name. 
+	 *
+	 * Instead of writing how to do a specific thing over and over, we can 
+	 * simply make a method that says how to complete an operation once, and 
+	 * package the instructions together with a name. Classes can contain many 
+	 * methods to describe all the operations they are able to perform.
 	 * 
 	 * This 'method' which is called 'public static void main' or more simply
 	 * the 'main method' is something that, for the time being, you can feel
@@ -272,18 +282,19 @@ public class HelloWorld { /* The class description starts here */
 	 * numbers to add, right? Yes. We would then say that the two numbers that
 	 * the method needs to perform addition are the two parameters of the
 	 * method. In this case, we are saying that this method needs something
-	 * called 'args', which is short for 'arguments.' In this example, the
-	 * arguments to this method are not numbers, but are rather of type
-	 * 'String[]', which is actually the way you would describe a list of words
-	 * to a computer. Don't worry about this too much for now, ha ha! It's a lot
-	 * of information at first, right?
+	 * called 'args', which is short for 'arguments.' 
+	 * 
+	 * In this example, the arguments to this method are not numbers, but are 
+	 * rather of type String[], which is actually the way you would describe a 
+	 * list of words to a computer in the Java language. Don't worry about this 
+	 * too much for now, ha ha! It's a lot of information at first, right?
 	 * 
 	 * Again, if you do not understand what a 'String[]' is yet, don't worry. We
 	 * will explain it later...
 	 */
 	public static void main(String[] args) { /* The method starts here */
 
-		/*
+		/**
 		 * This is an example of an instruction to a computer. In this case, the
 		 * way we have written 'System.out.println' is a direction to the
 		 * computer to write something onto the screen. Into brackets () we have
