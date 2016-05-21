@@ -35,10 +35,15 @@
  * how to do things, and because we are smarter than computers, we can 
  * understand vague language and act accordingly. Because we can do this, we
  * automatically think the computer will know what we mean, but this is not the
- * case. When you write a program, you will tell a computer exactly what to do,
- * according to the types of instructions available that the computer can 
- * understand. Programming languages like Java are just like human languages --
- * they are a set of words which can be understood and combined in different 
+ * case. Computers have no way of interpreting any kind of ambiguity. They are 
+ * only capable of interpreting exact instructions, exactly as written, with 
+ * only a single possible interpretation. When you write a program, you will 
+ * tell a computer exactly what to do, according to the types and combinations
+ * of instructions available that the computer can meaningfully understand and
+ * execute. 
+ * 
+ * In this way, programming languages like Java are just like human languages.
+ * They are a set of words which can be understood and combined in different 
  * ways according to grammatical rules. This defines the set of things we are
  * able to tell a computer. 
  * 
